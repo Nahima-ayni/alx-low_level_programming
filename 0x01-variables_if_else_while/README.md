@@ -1,1 +1,1 @@
-my readme variables and if
+my variables readme
