@@ -7,9 +7,9 @@ int main(void)
 
 	while (alphabet <= 'z')
 	{
-		putschar(alphabet);
+		putchar(alphabet);
 		alphabet++;
 }
-	putschar('\n');
+	putchar('\n');
 	return (0);
 }
