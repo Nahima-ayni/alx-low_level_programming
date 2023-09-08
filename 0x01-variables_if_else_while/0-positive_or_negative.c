@@ -2,8 +2,13 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
-/* main - c variables.Return: always 0 (Success)*/
-int main(void);
+/**
+ * main - c variables
+ *
+ * Return: Always 0 (Success)
+*/
+
+int main(void)
 {
 	int n;
 
