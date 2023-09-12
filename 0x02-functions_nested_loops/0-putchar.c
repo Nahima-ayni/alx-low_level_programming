@@ -1,12 +1,9 @@
 #include "main.h"
 #include <unistd>
 /**
- * main- c functions
- * Description for the _putchar
- * _putchar - prints putchar
- *
- * return: 0 (Success)
- *
+ * main - entry point
+ * functions and nested loops
+ * Return: 0 always succes
 */
 int main(void)
 {
