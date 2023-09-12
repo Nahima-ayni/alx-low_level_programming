@@ -5,7 +5,7 @@
  * Description for the _putchar
  * _putchar - prints putchar
  *
- * return: 0 Success
+ * return: 0 (Success)
  *
 */
 int main(void)
