@@ -4,7 +4,7 @@
  * _strncat - combine and specify numbers you want
  * @dest: destination
  * @src: source
- * @n: max no of char limit specified to combine
+ * @n: maximum limit of characters
  * Return: *dest
 */
 char *_strncat(char *dest, char *src, int n)
@@ -13,15 +13,14 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (f = 0; dest[f] != '\0'; f++)
 
-	for (h = 0; src[h] != '\0' && n < 0; h++)
+	for (h = 0; src[h] != '\0' && n > 0; h++)
 	{
-		*dest = *src;
+		dest[f] = src[h];
 		dest++;
 		src++;
 		n--;
 	}
 
 	*dest = '\0';
-
 	return (dest);
 }
