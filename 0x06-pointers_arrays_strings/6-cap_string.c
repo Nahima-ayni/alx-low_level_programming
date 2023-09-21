@@ -17,7 +17,7 @@ char *cap_string(char *ptr)
 		if (ptr[x - 1] == ' '  ||
 			ptr[x - 1] == '\t' ||
 			ptr[x - 1] == '\n' ||
-        		ptr[x - 1] == '.' ||
+			ptr[x - 1] == '.' ||
 			ptr[x - 1] == ',' ||
 			ptr[x - 1] == '!' ||
 			ptr[x - 1] == '?' ||
