@@ -1,21 +1,37 @@
 #include "main.h"
-
 /**
- * string_toupper - lowercase to uppercase
+ * cap_string - lowercase to uppercase
  * @ptr: char
- *Return: The uppercase version of the input
-*/
-char *string_toupper(char *ptr)
+ * @x: integer
+ * Return: ptr
+ */
+char *cap_string(char *ptr)
 {
-        int z;
+        int x = 0;
 
-        for (z = 0; ptr[z] != '\0' ; z++)
+        while (ptr[x])
         {
-                if (ptr[z] >= 'a' && ptr[z] <= 'z')
-                {
-                        ptr[z] = ptr[z] - 32;
-			ptr[z] = ptr
-                }
+                while (!(ptr[x] >= 'a' && ptr[x] <= 'z'))
+                        x++;
+
+                if (ptr[x - 1] == ' '  ||
+                    ptr[x - 1] == '\t' ||
+                    ptr[x - 1] == '\n' ||
+                    ptr[x - 1] == '.' ||
+                    ptr[x - 1] == ',' ||
+                    ptr[x - 1] == '!' ||
+                    ptr[x - 1] == '?' ||
+                    ptr[x - 1] == '{' ||
+                    ptr[x - 1] == '}' ||
+                    ptr[x - 1] == ';' ||
+                    ptr[x - 1] == '(' ||
+                    ptr[x - 1] == ')' ||
+                    ptr[x - 1] == '"' ||
+                    x == 0)
+                        ptr[x] -= 32;
+
+                x++;
         }
+
         return (ptr);
 }
