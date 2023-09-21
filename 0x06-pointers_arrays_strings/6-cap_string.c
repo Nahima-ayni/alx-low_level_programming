@@ -2,7 +2,6 @@
 /**
  * cap_string - lowercase to uppercase
  * @ptr: char
- * @x: integer
  * Return: ptr
  */
 char *cap_string(char *ptr)
