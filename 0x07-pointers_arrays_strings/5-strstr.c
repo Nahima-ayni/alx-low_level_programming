@@ -21,10 +21,12 @@ char *_strstr(char *haystack, char *needle)
 				match = 0;
 				break;
 			}
+		}
 			if (match)
 			{
 				return (haystack + i);
 			}
-		}
-		return ('\0');
-
+	
+	}
+			return ('\0');
+}
