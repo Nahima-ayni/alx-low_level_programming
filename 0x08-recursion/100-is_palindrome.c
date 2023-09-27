@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * is_palindrome - string is a palindrome
- * @s: char
- * Return: 1 if a string is a palindrome and 0 if not.
+ * str_length - string
+ * @s: *s
+ * Return: always return success
  */
 int str_length(char *s)
 {
@@ -14,6 +14,13 @@ int str_length(char *s)
 	return (1 + str_length(s + 1));
 }
 
+/**
+ * is_palindrome_helper - a helper function
+ * @s: a pointer
+ * @start: a variable
+ * @end: an end variable
+ * Return: always success
+ */
 int is_palindrome_helper(char *s, int start, int end)
 {
 	if (start >= end)
@@ -29,6 +36,11 @@ int is_palindrome_helper(char *s, int start, int end)
 	return (is_palindrome_helper(s, start + 1, end - 1));
 }
 
+/**
+ * is_palindrome - a palindrome
+ * @s: a pointer
+ * Return: always success
+ */
 int is_palindrome(char *s)
 {
 	int length = str_length(s);
