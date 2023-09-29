@@ -13,16 +13,16 @@ int check_num(char *str)
 {
 	unsigned int flag;
 
-        flag = 0;
-        while (flag < strlen(str))
+	flag = 0;
+	while (flag < strlen(str))
 
-        {
+	{
 		if (!isdigit(str[flag]))
-                {
-                        return (0);
-                }
+		{
+			return (0);
+		}
 
-                flag++;
+		flag++;
 	}
 
 	return (1);
@@ -35,7 +35,7 @@ int check_num(char *str)
  *
  * Return: Always Success
  */
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	int flag;
 	int str_to_int;
