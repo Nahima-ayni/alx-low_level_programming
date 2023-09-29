@@ -22,6 +22,6 @@ Use the nm command to inspect the symbols (functions and variables) within the l
 
 #STEP 3: TEST THE LIBRARY
 The main.c file contains a sample program that uses functions from the libmy.a library. Compile and run the program to ensure it works correctly:
-	gcc main.c -o quote -L. -lmy
+	gcc main.c -o quote -lmy
 	./quote
 
