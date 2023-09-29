@@ -455,3 +455,52 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
+0-strcat.c/     0           0     0     644     333       `
+#include "main.h"
+
+/**
+  * _strcat - combine two strings
+  * @src: source
+  * @dest: destination
+  * Return: return dest as success
+*/
+char *_strcat(char *dest, char *src)
+{
+	int m, n;
+
+	for (m = 0; dest[m] != '\0'; m++)
+	{
+	}
+
+	for (n = 0; src[n] != '\0'; n++)
+	{
+		dest[m + n] = src[n];
+	}
+
+	dest[m + n] = '\0';
+
+	return (dest);
+}
+
+1-isdigit.c/    0           0     0     644     205       `
+#include "main.h"
+
+/**
+ * _isdigit - checks for a digit
+ * @c: is c a digit
+ * Return: 1 if c is digit
+*/
+
+int _isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+	{
+		return (1);
+	}
+
+	else
+	{
+		return (0);
+	}
+}
+
