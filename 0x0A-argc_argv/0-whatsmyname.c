@@ -1,13 +1,18 @@
 #include <stdio.h>
 #include "main.h"
 
-/** whatsmyname - prints a new mine
+/**
+ * _whatsmyname - prints a new mine
  * @argc: agrmunet count
  * @argv: argument vector
  */
-int _whatsmyname(char argc, char *argv[])
+
+int main(int argc, char *argv[])
 {
-	printf("%0s\n", argv[0]);
+	if (argc > 0)
+	{
+		printf("%s\n", argv[0]);
+	}
 	return (0);
 }
 
