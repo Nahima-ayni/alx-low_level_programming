@@ -9,8 +9,8 @@ This quiz assesses your knowledge of static libraries in C programming. You'll b
 2. Use the following commands to compile the functions and create the static library:
 
    ```bash
-   gcc -c function1.c function2.c ... -o function1.o function2.o ...
-   ar rcs libmy.a function1.o function2.o ...
+   gcc -c main.c -o main.o
+   ar rcs libmy.a main.o
 
 #STEP 2: EXAMINE LIBRARY CONTENTS
 
@@ -22,6 +22,6 @@ Use the nm command to inspect the symbols (functions and variables) within the l
 
 #STEP 3: TEST THE LIBRARY
 The main.c file contains a sample program that uses functions from the libmy.a library. Compile and run the program to ensure it works correctly:
-	gcc main.c -o my_program -L. -lmy
-	./my_program
+	gcc main.c -o quote -L. -lmy
+	./quote
 
