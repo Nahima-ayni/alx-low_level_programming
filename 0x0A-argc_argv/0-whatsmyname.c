@@ -2,9 +2,10 @@
 #include "main.h"
 
 /**
- * _whatsmyname - prints a new mine
+ * main - prints a new mine
  * @argc: agrmunet count
  * @argv: argument vector
+ * Return: always success
  */
 
 int main(int argc, char *argv[])
