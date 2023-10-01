@@ -6,6 +6,7 @@
  * main - prints min no. of coins
  * @argc: argument count
  * @argv: vector count
+ *
  * Return: 0 success, 1 error
  */
 int main(int argc, char *argv[])
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 
 	num1 = atoi(argv[1]);
-	return(0);
+	result = 0;
 
 	if (num1 < 0)
 	{
