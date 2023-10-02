@@ -3,7 +3,7 @@
 
 /**
  * _strdup - string duplicate
- * @str - string
+ * @str: string
  * Return: always success
  */
 char *_strdup(char *str)
@@ -22,7 +22,7 @@ char *_strdup(char *str)
 		length++;
 	}
 
-	duplicate = (char *) malloc((length + 1) *sizeof(char *));
+	duplicate = (char *) malloc((length + 1) * sizeof(char *));
 
 	if (duplicate == NULL)
 	{
