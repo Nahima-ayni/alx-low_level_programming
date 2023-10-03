@@ -20,13 +20,14 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; i++)
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			length++;
+		}
 		length++;
 	}
-	length++;
-	length++;
 
-	combination = (char *)malloc(length * sizeof(char));
+	combination = (char *)malloc((length + 1) * sizeof(char));
 	if (combination == NULL)
 	{
 		return (NULL);
@@ -35,13 +36,13 @@ char *argstostr(int ac, char **av)
 	length = 0;
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; i++)
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
 			combination[length++] = av[i][j];
 		}
-	combination[length++] = '\n';
+		combination[length++] = '\n';
 	}
 
-	combination[length++] = '\0';
+	combination[length] = '\0';
 	return (combination);
 }
