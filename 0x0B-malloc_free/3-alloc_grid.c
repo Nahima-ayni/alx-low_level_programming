@@ -36,11 +36,16 @@ int **alloc_grid(int width, int height)
 			for (j = 0; j < width; j++)
 			{
 				free(grid[j]);
-				return (NULL);
 			}
+
+			free (grid);
+			return (NULL);
+		}
+		
+		for (j = 0; j < width; j++)
+		{
+			grid[i][j] = 0;
 		}
 	}
-
-	free(grid);
 	return (grid);
 }
