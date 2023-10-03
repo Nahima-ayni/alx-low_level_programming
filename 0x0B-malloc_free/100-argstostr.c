@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * argstostr - 
+ * argstostr - concatenates all the arguments of your program
  * @ac: integer
- * @av: pointer to  char 
+ * @av: pointer to  char
  * Return: always success
  */
 char *argstostr(int ac, char **av)
@@ -25,7 +25,7 @@ char *argstostr(int ac, char **av)
 	}
 	length++;
 	length++;
-	
+
 	combination = (char *)malloc(length * sizeof(char));
 	if (combination == NULL)
 	{
@@ -34,8 +34,8 @@ char *argstostr(int ac, char **av)
 
 	length = 0;
 	for (i = 0; i < ac; i++)
-        {
-                for (j = 0; av[i][j] != '\0'; i++)
+	{
+		for (j = 0; av[i][j] != '\0'; i++)
 		{
 			combination[length++] = av[i][j];
 		}
