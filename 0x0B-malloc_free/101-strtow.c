@@ -35,15 +35,15 @@ int no_word(char *s)
  */
 char **strtow(char *str)
 {
-	int i, length = 0, k = 0, word, c, start, end; 
+	int i, length = 0, k = 0, word, c, start, end;
 	char **arrayWord, *tmp;
-	
+
 	while (*(str + length))
 		length++;
 	word = no_word(str);
 	if (word == 0)
 		return (NULL);
-	arrayWord = (char**) malloc(sizeof(char*) * (word + 1));
+	arrayWord = (char **) malloc(sizeof(char *) * (word + 1));
 	if (arrayWord == NULL)
 		return (NULL);
 	for (i = 0; i <= length; i++)
