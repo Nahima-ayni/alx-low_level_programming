@@ -1,56 +1,26 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "dog.h"
+#include <stdlib.h>
 
+/**
+ * new_dog - creates a new dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ * Return: a pointer to the new dog or NULL if it fails
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog = (dog_t *)malloc(sizeof(dog_t));
+	dog_t *new_dog;
+
+	new_dog = malloc(sizeof(dog_t));
 
 	if (new_dog == NULL)
-	{
-	perror("Memory allocation failed");
-	return NULL;
-	}
+	return (NULL);
 
-    new_dog->name = strdup(name);
+	new_dog->name = name;
+	new_dog->owner = owner;
+	new_dog->age = age;
 
-	if (new_dog->name == NULL)
-	{
-	perror("Name duplication failed");
-        free(new_dog);
-	return NULL;
-	}
-
-	new_dog->owner = strdup(owner);
-
-	if (new_dog->owner == NULL)
-	{
-	perror("Owner duplication failed");
-	free(new_dog->name);
 	free(new_dog);
-	return NULL;
-	}
-
-    new_dog->age = age;
-
-	return new_dog;
+	return (new_dog);
 }
-
-int main()
-{
-
-	dog_t *my_dog = new_dog("Fido", 3.5, "Alice");
-
-	if (my_dog != NULL)
-	{
-	printf("Created a dog named %s with owner %s and age %.1f\n", my_dog->name, my_dog->owner, my_dog->age);
-        
-	free(my_dog->name);
-	free(my_dog->owner);
-	free(my_dog);
-	}
-
-	return 0;
-}
-
