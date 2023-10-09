@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *  print_dog - structure name
+ * print_dog - structure name
  * @d: pointer to the structure
  */
 void print_dog(struct dog *d)
