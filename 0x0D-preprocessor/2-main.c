@@ -2,7 +2,7 @@
 
 /**
  * main - File header
- * @Return: return 0 always success
+ * Return: always success
  */
 
 int main(void)
