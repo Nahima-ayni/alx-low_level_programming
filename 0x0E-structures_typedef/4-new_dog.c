@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * new_dog - creates a new dog
- * @name: name of the dog
- * @age: age of the dog
- * @owner: owner of the dog
+ * new_dog - new dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of  dog
  * Return: a pointer to the new dog or NULL if it fails
  */
 dog_t *new_dog(char *name, float age, char *owner)
@@ -21,6 +21,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_dog->owner = owner;
 	new_dog->age = age;
 
-	free(new_dog);
 	return (new_dog);
 }
