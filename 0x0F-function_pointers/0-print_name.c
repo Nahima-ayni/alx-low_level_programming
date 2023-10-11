@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 
 /**
  * print_name - function name
@@ -9,21 +10,9 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
-}
-
-void functionprint(char *s)
-{
-	int i;
-	int n = 0;
-
-	while (s[n] != '\0')
+	if (name == NULL || f == NULL)
 	{
-		n++;
-	}
-	for (i = 0; i < n; i++)
-	{
-		_putchar(s[i]);
+		f(name);
 	}
 }
 
