@@ -3,71 +3,53 @@
 #include <stdlib.h>
 
 /**
- * op_add - function add
- * @a: integer
- * @b: integer
- * Return: always success
+ * op_add - sum two numbers
+ * @a: first number
+ * @b: second number
+ * Return: sum of two numbers
  */
 int op_add(int a, int b)
 {
-	int sum;
-
-	sum = a + b;
-	return (sum);
+	return (a + b);
 }
 
 /**
- * op_sub - function sub
- * @a: integer
- * @b: integer
- * Return: always success
+ * op_sub - subtract two number
+ * @a: first number
+ * @b: second number
+ * Return: diffrence of a and b
  */
 int op_sub(int a, int b)
 {
-	int difference;
-
-	difference = a - b;
-	return (difference);
+	return (a - b);
 }
-
 /**
- * op_mul - function mul
- * @a: integer
- * @b: integer
- * Return: always success
+ * op_mul - subtract two number
+ * @a: first number
+ * @b: second number
+ * Return: product of a and b
  */
 int op_mul(int a, int b)
 {
-	int product;
-
-	product = a * b;
-	return (product);
+	return (a * b);
 }
-
 /**
- * op_div - function div
- * @a: integer
- * @b: integer
- * Return: always success
+ * op_div - subtract two number
+ * @a: first number
+ * @b: second number
+ * Return: result of divsion  a by b
  */
 int op_div(int a, int b)
 {
-	int result;
-
-	result = a / b;
-	return (result);
+	return (a / b);
 }
-
 /**
- * op_mod - function modulo
- * @a: integer
- * @b: integer
- * Return: always success
+ * op_mod - subtract two number
+ * @a: first number
+ * @b: second number
+ * Return: remainder of the division of a by b
  */
 int op_mod(int a, int b)
 {
-	int remainder;
-
-	remainder = a % b;
-	return (remainder);
+	return (a % b);
 }
