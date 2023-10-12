@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
- * sum_them_all - function 
+ * sum_them_all - function
  * @n: const unsigned int
  * Return: always success
  *
@@ -15,7 +15,8 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int x = 0;
 
 	va_list sumargs;
-	va_start (sumargs, n);
+
+	va_start(sumargs, n);
 
 	if (n == 0)
 	{
@@ -24,7 +25,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		 x += va_arg(sumargs, unsigned int);
+		x += va_arg(sumargs, unsigned int);
 	}
 
 	va_end(sumargs);
