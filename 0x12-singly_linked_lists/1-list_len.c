@@ -7,15 +7,13 @@
  */
 size_t list_len(const list_t *h)
 {
-    size_t count = 0; // Initialize a variable to keep track of the count
+	size_t count = 0;
 
-    // Traverse the list while h is not NULL
-    while (h != NULL)
-    {
-        count++;    // Increment the count for each node
-        h = h->next; // Move to the next node
-    }
+	while (h != NULL)
+	{
+		count++;
+		h = h->next;
+	}
 
-    return count; // Return the total count of nodes
+	return (count);
 }
-
