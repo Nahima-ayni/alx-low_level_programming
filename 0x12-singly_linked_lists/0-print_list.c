@@ -22,5 +22,6 @@ size_t print_list(const list_t *h)
 		mark++;
 		h = h->next;
 	}
+	printf("-> %d elements\n", mark);
 	return (mark);
 }
