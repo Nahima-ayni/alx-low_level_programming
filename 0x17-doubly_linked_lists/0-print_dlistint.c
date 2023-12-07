@@ -2,7 +2,7 @@
 
 /**
  * print_dlistint - function name
- * @h: head first node 
+ * @h: head first node
  * Return: always success
  */
 size_t print_dlistint(const dlistint_t *h)
@@ -19,5 +19,5 @@ size_t print_dlistint(const dlistint_t *h)
 		node_count++;
 	}
 
-	return node_count;
+	return (node_count);
 }
