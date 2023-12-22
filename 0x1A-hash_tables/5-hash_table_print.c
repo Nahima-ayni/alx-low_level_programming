@@ -22,7 +22,7 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			printf("%s '%s': '%s'", c, node->key, node->value);
 			c = ", ";
-			node = node->next;	
+			node = node->next;
 		}
 	}
 	printf("}\n");
