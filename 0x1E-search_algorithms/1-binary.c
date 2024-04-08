@@ -33,13 +33,12 @@ int binary_search(int *array, size_t size, int value)
 			}
 		}
 		printf("\n");
-			
 		if (array[mid] == value)
 			return (mid);
 		else if (array[mid] < value)
 			left = mid + 1;
 		else if (array[mid] > value)
-                        right = mid - 1;
+			right = mid - 1;
 	}
 	return (-1);
 }
